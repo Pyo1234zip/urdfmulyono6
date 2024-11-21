@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="udfmulyono6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000783141102793202 -0.000191689245917794 0.03430148319969"
+        rpy="0 0 0" />
+      <mass
+        value="0.15690853286764" />
+      <inertia
+        ixx="0.000236641740142685"
+        ixy="2.82542879554346E-07"
+        ixz="-1.34891540682362E-06"
+        iyy="0.000228841896873732"
+        iyz="3.07928333340519E-07"
+        izz="0.000355889869251704" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.000306996179908139 0.0132973747434004 0.0186151313156119"
+        rpy="0 0 0" />
+      <mass
+        value="0.110824441436758" />
+      <inertia
+        ixx="8.6446436305624E-05"
+        ixy="-2.45268751646067E-07"
+        ixz="-1.71291722291228E-07"
+        iyy="9.13032174311983E-05"
+        iyz="-8.7277036234354E-06"
+        izz="8.72521287516748E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.081"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.049578539715324 -0.0009656282764679 0.0212736088250974"
+        rpy="0 0 0" />
+      <mass
+        value="0.120061917018223" />
+      <inertia
+        ixx="4.09242749356238E-05"
+        ixy="4.92478325646621E-08"
+        ixz="5.00828524699795E-08"
+        iyy="0.000279832707272307"
+        iyz="1.31940887236388E-07"
+        izz="0.000284291367428017" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-7.57533663018131E-05 0 0.042225"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.0500051385539461 2.6406555969638E-08 -0.0301358791790427"
+        rpy="0 0 0" />
+      <mass
+        value="0.207694596899533" />
+      <inertia
+        ixx="5.53949882938886E-05"
+        ixy="5.73935438654888E-07"
+        ixz="-2.59008403107064E-12"
+        iyy="0.000342361071393656"
+        iyz="7.63149684254357E-12"
+        izz="0.0003472033571648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.0999999999999979 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0272558474718296 0.00346188283570689 0.0205881254256505"
+        rpy="0 0 0" />
+      <mass
+        value="0.0812195400967062" />
+      <inertia
+        ixx="3.27017910035831E-05"
+        ixy="-7.03944268443802E-06"
+        ixz="-7.44781546436918E-07"
+        iyy="8.38696037075882E-05"
+        iyz="1.83789593029991E-07"
+        izz="8.40003786860381E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.100010208352394 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="grippermotor">
+    <inertial>
+      <origin
+        xyz="0.0161741737790265 -0.00591349975972587 -0.00194711687306982"
+        rpy="0 0 0" />
+      <mass
+        value="0.00764762460244495" />
+      <inertia
+        ixx="1.11084883671302E-06"
+        ixy="1.37185287987019E-06"
+        ixz="2.74271028971263E-09"
+        iyy="4.31062375951459E-06"
+        iyz="-1.12101077316065E-09"
+        izz="5.40112170569914E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/grippermotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/grippermotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="grippermotor"
+    type="revolute">
+    <origin
+      xyz="0.0689261797267348 -0.0158487144045856 0.0087100000000014"
+      rpy="1.5707963267949 0 0.358072014561217" />
+    <parent
+      link="link4" />
+    <child
+      link="grippermotor" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.21575"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="end">
+    <inertial>
+      <origin
+        xyz="-0.0704448385256988 0.00529182073340676 -0.00194711687306975"
+        rpy="0 0 0" />
+      <mass
+        value="0.00764762460244495" />
+      <inertia
+        ixx="1.11084883671302E-06"
+        ixy="1.37185287987019E-06"
+        ixz="2.742710289712E-09"
+        iyy="4.31062375951459E-06"
+        iyz="-1.12101077316046E-09"
+        izz="5.40112170569914E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end"
+    type="fixed">
+    <origin
+      xyz="0.086619 -0.011205 0"
+      rpy="0 0 0" />
+    <parent
+      link="grippermotor" />
+    <child
+      link="end" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gripperikut">
+    <inertial>
+      <origin
+        xyz="0.00804213349608796 0.00306946442669647 -0.00199999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00641643405685643" />
+      <inertia
+        ixx="7.48754776740673E-07"
+        ixy="-5.48545376180117E-07"
+        ixz="1.05879118406788E-22"
+        iyy="2.04547810666641E-06"
+        iyz="-1.7091590044293E-22"
+        izz="2.77712239258879E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/gripperikut.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/gripperikut.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripperikut"
+    type="revolute">
+    <origin
+      xyz="0.0885942392586775 -0.00848886153595051 0.0424100000000001"
+      rpy="1.5707963267949 0 0.358072014561217" />
+    <parent
+      link="link4" />
+    <child
+      link="gripperikut" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.21575"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="end2">
+    <inertial>
+      <origin
+        xyz="-0.0590384962400248 5.09193787376835E-05 -0.00199999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00641643405685643" />
+      <inertia
+        ixx="7.48754776740673E-07"
+        ixy="-5.48545376180117E-07"
+        ixz="-5.29395592033938E-22"
+        iyy="2.04547810666641E-06"
+        iyz="-1.9598114153884E-22"
+        izz="2.7771223925888E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/end2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://udfmulyono6/meshes/end2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end2"
+    type="fixed">
+    <origin
+      xyz="0.0670806297361128 0.00301854504795881 0"
+      rpy="0 0 0" />
+    <parent
+      link="gripperikut" />
+    <child
+      link="end2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
